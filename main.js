@@ -2,7 +2,7 @@
 if('serviceWorker' in navigator) {
     console.log('SW supported');
     window.addEventListener('load', () => {
-        navigator.serviceWorker.register('../sw_cached_pages.js')
+        navigator.serviceWorker.register('./sw_cached_pages.js')
         .then(register => console.log('SW registered'))
         .catch(err => console.log('Service worker Error', err))
     })
